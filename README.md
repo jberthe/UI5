@@ -93,7 +93,7 @@ on<ma_route>Matched: function(event) {
 * Fichiers d’annotations : <Nomdumodèle>.anno.xml
 
 ## Exemples / demos
-* [Promesses](Exemples/Promise.js) : utilisation des promesses (exemple de chainage)
+* [Promesses](Exemples/Promises.js) : utilisation des promesses (exemple de chainage)
 * [Classe](Exemples/Class.js) : utilisation des class (ES6)
 * [ES6](Exemples/ES6.js) : exemples de nouvelle syntaxe ES6 (déclarations, fonction fléchées, template, class...)
 * [Validation Form](Exemples/Validation_form.js) : routine pour validation des champs obligatoires d'un form
