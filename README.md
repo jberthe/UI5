@@ -1,28 +1,31 @@
-# UI5 - Référence
+# UI5 Référence
 Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
 ## Index
 - [Liens de base](#liens-de-base)
-- [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques)
+- [Bonnes pratiques](#bonnes-pratiques)
   - [Structure d'un projet](#structure-projet)
-- [Nommages](nommages)
+  - [Organisation du code](#organisation-du-code)
+- [Nommages](#nommages)
+- [Trucs et astuces](#trucs-et-astuces)
+- [Exemples de code](#exemples-de-code)
 
 ## Liens de base
 
-> [Liens de base](#liens-de-base)
+> [UI5](ui5-référence) > [Liens de base](#liens-de-base)
 
 * [Fiori guidelines](https://experience.sap.com/fiori-design)
 * [Racine doc UI5 (tutos, exemples, api...)](https://ui5.sap.com)
 * [Git Rolex](https://alm-git.myrolex.com/dashboard)
 * [Github Groupe dev](https://github.com/groupedave?tab=repositories)
 
-## Bonnes pratiques pour un développement spécifique
+## Bonnes pratiques
 
-> [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques)
+> [UI5](ui5-référence) > [Bonnes pratiques](#bonnes-pratiques)
 
-### Structure d'un projet
+### Structure projet
 
-> [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques) > [Structure d'un projet](#structure-projet)
+> [UI5](ui5-référence) > [Bonnes pratiques](#bonnes-pratiques) > [Structure projet](#structure-projet)
 
 La structure visée est la suivante : 
 * Formatter, Models, et autres classe utilitaires de traitement des données dans le répertoire model
@@ -35,6 +38,9 @@ Exemple :
 ![Structure](/Images/structure.jpg)
 
 ### Organisation du code
+
+> [UI5](ui5-référence) > [Bonnes pratiques](#bonnes-pratiques) > [Organisation du code](#organisation-du-code)
+
 #### Classe d'accès au données
 
 Créer une classe Models.js qui contiendra toutes les opérations liées aux modèles de l'application (CRUD...)
@@ -104,6 +110,8 @@ on<ma_route>Matched: function(event) {
 
 ## Nommages
 
+> [UI5](ui5-référence) > [Nommages](#nommages)
+
 * Application : Z<module>_<nom metier> (ex : ZSD_LISTE_CMDS) (15 char max)
 * Namespace : ch.rolex.<module>.<application> (Ex : ch.rolex.sd.liste_cmds)
 * Vues : <nom>.view.xml (Ex : main.view.xml)
@@ -113,6 +121,9 @@ on<ma_route>Matched: function(event) {
 * Fichiers d’annotations : <Nomdumodèle>.anno.xml
 
 ## Trucs et astuces
+
+> [UI5](ui5-référence) > [Trucs et astuces](#trucs-et-astuces)
+
 ### Passer du letterbox au plein écran
 Dans component.js :
 ```
@@ -142,7 +153,10 @@ Dans les project settings -> Code checking -> Javascript -> Validator configurat
 Ajouter "es6" : true
 ![ES6](/Images/es.jpg)
 
-## Exemples / demos
+## Exemples de code
+
+> [UI5](ui5-référence) > [Exemples de code](#exemples-de-code)
+
 * [Promesses](Exemples/Promises.js) : utilisation des promesses (exemple de chainage)
 * [Classe](Exemples/Class.js) : utilisation des class (ES6)
 * [ES6](Exemples/ES6.js) : exemples de nouvelle syntaxe ES6 (déclarations, fonction fléchées, template, class...)
