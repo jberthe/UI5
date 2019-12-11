@@ -12,7 +12,7 @@ Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
 ## Liens de base
 
-> [UI5](ui5-référence) > [Liens de base](#liens-de-base)
+> [UI5](#ui5-référence) > [Liens de base](#liens-de-base)
 
 * [Fiori guidelines](https://experience.sap.com/fiori-design)
 * [Racine doc UI5 (tutos, exemples, api...)](https://ui5.sap.com)
@@ -21,11 +21,11 @@ Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
 ## Bonnes pratiques
 
-> [UI5](ui5-référence) > [Bonnes pratiques](#bonnes-pratiques)
+> [UI5](#ui5-référence) > [Bonnes pratiques](#bonnes-pratiques)
 
 ### Structure projet
 
-> [UI5](ui5-référence) > [Bonnes pratiques](#bonnes-pratiques) > [Structure projet](#structure-projet)
+> [UI5](#ui5-référence) > [Bonnes pratiques](#bonnes-pratiques) > [Structure projet](#structure-projet)
 
 La structure visée est la suivante : 
 * Formatter, Models, et autres classe utilitaires de traitement des données dans le répertoire model
@@ -39,7 +39,7 @@ Exemple :
 
 ### Organisation du code
 
-> [UI5](ui5-référence) > [Bonnes pratiques](#bonnes-pratiques) > [Organisation du code](#organisation-du-code)
+> [UI5](#ui5-référence) > [Bonnes pratiques](#bonnes-pratiques) > [Organisation du code](#organisation-du-code)
 
 #### Classe d'accès au données
 
@@ -110,7 +110,7 @@ on<ma_route>Matched: function(event) {
 
 ## Nommages
 
-> [UI5](ui5-référence) > [Nommages](#nommages)
+> [UI5](#ui5-référence) > [Nommages](#nommages)
 
 * Application : Z<module>_<nom metier> (ex : ZSD_LISTE_CMDS) (15 char max)
 * Namespace : ch.rolex.<module>.<application> (Ex : ch.rolex.sd.liste_cmds)
@@ -122,7 +122,7 @@ on<ma_route>Matched: function(event) {
 
 ## Trucs et astuces
 
-> [UI5](ui5-référence) > [Trucs et astuces](#trucs-et-astuces)
+> [UI5](#ui5-référence) > [Trucs et astuces](#trucs-et-astuces)
 
 ### Passer du letterbox au plein écran
 Dans component.js :
@@ -155,7 +155,7 @@ Ajouter "es6" : true
 
 ## Exemples de code
 
-> [UI5](ui5-référence) > [Exemples de code](#exemples-de-code)
+> [UI5](#ui5-référence) > [Exemples de code](#exemples-de-code)
 
 * [Promesses](Exemples/Promises.js) : utilisation des promesses (exemple de chainage)
 * [Classe](Exemples/Class.js) : utilisation des class (ES6)
