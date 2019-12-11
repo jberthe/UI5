@@ -1,7 +1,15 @@
 # UI5 - Référence
 Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
+## Index
+- [Liens de base](#links)
+- [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques)
+  - [Structure d'un projet](#structure-projet)
+
 ## Liens de base
+
+> [Liens de base](#links)
+
 * [Fiori guidelines](https://experience.sap.com/fiori-design)
 * [Racine doc UI5 (tutos, exemples, api...)](https://ui5.sap.com)
 * [Git Rolex](https://alm-git.myrolex.com/dashboard)
@@ -9,7 +17,11 @@ Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
 ## Bonnes pratiques pour un développement spécifique
 
+> [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques)
+
 ### Structure d'un projet
+
+> [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques) > [Structure d'un projet](#structure-projet)
 
 La structure visée est la suivante : 
 * Formatter, Models, et autres classe utilitaires de traitement des données dans le répertoire model
@@ -112,21 +124,20 @@ metadata: {
 ```
 Dans index.html :
 ```javascript
-<script>
-	sap.ui.getCore().attachInit(function() {
-		new sap.m.Shell({
-			app: new sap.ui.core.ComponentContainer({
-				height : "100%",
-				name : "ch.rolex.pm.demandemobilier-createdemandemobilier"
-			}),
-			appWidthLimited: false
-		}).placeAt("content");
-	});
-</script>
+sap.ui.getCore().attachInit(function() {
+	new sap.m.Shell({
+		app: new sap.ui.core.ComponentContainer({
+			height : "100%",
+			name : "ch.rolex.pm.demandemobilier-createdemandemobilier"
+		}),
+		appWidthLimited: false
+	}).placeAt("content");
+});
 ```
 
 ### Utiliser ES6 dans Webide
 Dans les project settings -> Code checking -> Javascript -> Validator configuration
+
 Ajouter "es6" : true
 ![ES6](/Images/es.jpg)
 
