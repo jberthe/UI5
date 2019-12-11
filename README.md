@@ -1,7 +1,14 @@
 # UI5 - Référence
 Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
-## Bonnes pratiques
+## Liens de base
+* [Fiori guidelines](https://experience.sap.com/fiori-design)
+* [Racine doc UI5 (tutos, exemples, api...)](https://ui5.sap.com)
+* [Git Rolex](https://alm-git.myrolex.com/dashboard)
+* [Github Groupe dev](https://github.com/groupedave?tab=repositories)
+
+## Bonnes pratiques pour un développement spécifique
+
 ### Structure d'un projet
 
 La structure visée est la suivante : 
@@ -82,7 +89,7 @@ on<ma_route>Matched: function(event) {
 }
 ```
 
-### Nommages
+## Nommages
 
 * Application : Z<module>_<nom metier> (ex : ZSD_LISTE_CMDS) (15 char max)
 * Namespace : ch.rolex.<module>.<application> (Ex : ch.rolex.sd.liste_cmds)
@@ -91,6 +98,37 @@ on<ma_route>Matched: function(event) {
 * Controlleurs : <Nomdelavue>.controller.js  (Ex : Main.controller.js)
 * Model local : <Nom>.json
 * Fichiers d’annotations : <Nomdumodèle>.anno.xml
+
+## Trucs et astuces
+### Passer du letterbox au plein écran
+Dans component.js :
+```
+metadata: {
+	manifest: "json",
+	config: {
+		fullWidth: true
+	}
+},
+```
+Dans index.html :
+```javascript
+<script>
+	sap.ui.getCore().attachInit(function() {
+		new sap.m.Shell({
+			app: new sap.ui.core.ComponentContainer({
+				height : "100%",
+				name : "ch.rolex.pm.demandemobilier-createdemandemobilier"
+			}),
+			appWidthLimited: false
+		}).placeAt("content");
+	});
+</script>
+```
+
+### Utiliser ES6 dans Webide
+Dans les project settings -> Code checking -> Javascript -> Validator configuration
+Ajouter "es6" : true
+![ES6](/Images/es.jpg)
 
 ## Exemples / demos
 * [Promesses](Exemples/Promises.js) : utilisation des promesses (exemple de chainage)
