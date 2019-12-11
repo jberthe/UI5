@@ -2,13 +2,14 @@
 Bonnes pratiques et exemple des code pour les deéveloppements UI5
 
 ## Index
-- [Liens de base](#links)
+- [Liens de base](#liens-de-base)
 - [Bonnes pratiques pour un développement spécifique](#bonnes-pratiques)
   - [Structure d'un projet](#structure-projet)
+- [Nommages](nommages)
 
 ## Liens de base
 
-> [Liens de base](#links)
+> [Liens de base](#liens-de-base)
 
 * [Fiori guidelines](https://experience.sap.com/fiori-design)
 * [Racine doc UI5 (tutos, exemples, api...)](https://ui5.sap.com)
