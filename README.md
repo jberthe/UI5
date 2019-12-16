@@ -1,5 +1,5 @@
 # UI5 Référence
-Bonnes pratiques et exemple des code pour les deéveloppements UI5
+Bonnes pratiques et exemple des codes pour les développements UI5
 
 ## Index
 - [Liens de base](#liens-de-base)
